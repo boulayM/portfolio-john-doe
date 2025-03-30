@@ -1,11 +1,10 @@
 import { Route, Routes, Link } from "react-router-dom";
 import "./App.css";
-import Apropos from "./pages/Apropos";
+import Services from "./pages/Services";
 import Contact from "./pages/Contact";
-import Hours from "./pages/Hour";
+import Realisations from "./pages/Realisations";
 import Accueil from "./pages/Accueil";
-import 'bootstrap/dist/css/bootstrap.min.css';
-
+import MentionsLegales from "./pages/MentionsLegales";
 
 
 export default function App () {
@@ -14,15 +13,17 @@ export default function App () {
         <div className="App">
                 <nav className="App-nav">
                     <Link to="/">Accueil</Link>
-                    <Link to="/apropos">A propos</Link>
+                    <Link to="/services">Services</Link>
                     <Link to="/contact">Me contacter</Link>
-                    <Link to="/hours">Horloge</Link>
+                    <Link to="/realisations">Realisations</Link>
+                    <Link to="/mentionslegales">Mentions Légales</Link>
                 </nav>
             <Routes>
                 <Route path="/" element = {<Accueil/>}></Route>
-                <Route path="apropos" element = {<Apropos/>}></Route>
+                <Route path="services" element = {<Services/>}></Route>
                 <Route path="contact" element = {<Contact/>}></Route>
-                <Route path="hours" element = {<Hours/>}></Route>
+                <Route path="realisations" element = {<Realisations/>}></Route>
+                <Route path="mentionslegales" element = {<MentionsLegales/>}></Route>
             </Routes>
         </div>
     )
