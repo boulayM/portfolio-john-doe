@@ -1,3 +1,13 @@
+@font-face {
+  font-family: NunitoSans;
+  src: url(./assets/fonts/vertopal.com_NunitoSans-Italic-VariableFont_YTLC\,opsz\,wdth\,wght.woff);
+  src: url(./assets/fonts/NunitoSans-Italic-VariableFont_YTLC\,opsz\,wdth\,wght.ttf) format(truetype);
+}
+
+html {
+  font-family: NunitoSans, sans-serif;
+}
+
 .App {
   text-align: center;
   display: flex;
@@ -9,7 +19,7 @@
 }
 
 ul {
-  text-align: left;
+  text-align: right;
 }
 .App-header {
   display: flex;
@@ -17,27 +27,19 @@ ul {
   justify-content: center;
   margin-bottom: none;
   line-height: 1em;
-
 }
 
 .App-nav {
   display: flex;
   gap: 10px;
   padding: 10px;
-  background-color: rgb(34, 114, 88);
   margin-bottom: 10px;
   height: 40px;
   align-items: center;
   font-weight: bold;
   color: white;
 }
-.App-nav :any-link {
-  color: white;
-  text-decoration: none;
-}
-.App-main {
-  margin-top: none;
-}
+
 .flex {
   display: flex;
   flex-wrap: wrap;
@@ -49,97 +51,4 @@ ul {
   flex-direction: column;
   width: 200px;
   padding: 40px;
-}
-
-/*STYLE TIP-TAP-TOE*/
-
-* {
-  box-sizing: border-box;
-}
-
-body {
-  font-family: sans-serif;
-  margin: 20px;
-  padding: 0;
-}
-
-h1 {
-  margin-top: 0;
-  font-size: 22px;
-}
-
-h2 {
-  margin-top: 0;
-  font-size: 20px;
-}
-
-h3 {
-  margin-top: 0;
-  font-size: 18px;
-}
-
-h4 {
-  margin-top: 0;
-  font-size: 16px;
-}
-
-h5 {
-  margin-top: 0;
-  font-size: 14px;
-}
-
-h6 {
-  margin-top: 0;
-  font-size: 12px;
-}
-
-code {
-  font-size: 1.2em;
-}
-
-ul {
-  padding-inline-start: 20px;
-}
-
-* {
-  box-sizing: border-box;
-}
-
-body {
-  font-family: sans-serif;
-  margin: 20px;
-  padding: 0;
-}
-
-.square {
-  background: #fff;
-  border: 1px solid #999;
-  float: left;
-  font-size: 24px;
-  font-weight: bold;
-  line-height: 34px;
-  height: 34px;
-  margin-right: -1px;
-  margin-top: -1px;
-  padding: 0;
-  text-align: center;
-  width: 34px;
-}
-
-.board-row:after {
-  clear: both;
-  content: '';
-  display: table;
-}
-
-.status {
-  margin-bottom: 10px;
-}
-.game {
-  display: flex;
-  flex-direction: row;
-}
-
-.game-info {
-  margin-left: 20px;
 }

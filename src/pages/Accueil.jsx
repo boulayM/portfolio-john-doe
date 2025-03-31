@@ -3,7 +3,7 @@ import 'bootstrap/dist/css/bootstrap.min.css';
 
 const Accueil = ()=>{
     return (
-        <div>
+        <div className="App-body">
         <h1>Ma page APP</h1>
         <h2>Accueil</h2>
         <button type="button" className="btn btn-primary">Primary</button>
