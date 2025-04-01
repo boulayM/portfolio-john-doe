@@ -32,3 +32,8 @@ html {
     font-family: Nunito sans, sans-serif;
     font-weight: 600;
 }
+#avatar {
+  background-image: url("https://avatars.githubusercontent.com/u/19842736?v=4");
+  background-repeat: no-repeat;
+  background-size: contain;
+}
