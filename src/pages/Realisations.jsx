@@ -1,103 +1,129 @@
 import "../App.css";
-import { Container, Row, Col, Card, Button } from "react-bootstrap";
+import { Container, Row, Col, Card, Button, Image} from "react-bootstrap";
+import Fresh from "../assets/img/portfolio/fresh-food.jpg";
+import Akira from "../assets/img/portfolio/restaurant-japonais.jpg";
+import Etre from "../assets/img/portfolio/espace-bien-etre.jpg";
+import Seo from "../assets/img/portfolio/seo.jpg";
+import CreationApi from "../assets/img/portfolio/coder.jpg";
+import Maquet from "../assets/img/portfolio/screens.jpg";
+import Banner from "../assets/img/banner.jpg"
 
-
-const Realisations = ()=>{
+export default function Realisations () {
   return (
     <div>
-      <div className="portfolioHeader ratio ratio-21x9"></div>
-        <Container fluid="md" className="text-center mt-0">
+      <Image src={Banner} className="ratio ratio-21x9" />
+        <Container className="text-center">
           <Row>
             <Col>
-              <h1 className="fw-bold">Portfolio</h1>
+              <h1 className="fw-bold mt-5">Portfolio</h1>
               <p>Voici queques-unes de mes réalisations</p>
-              <div id="trait" className="bg-primary"></div>
             </Col>
-          </Row>
-          <Row>
+            <Row>
+              <Col></Col>
+              <Col><hr className="border border-primary border-3 opacity-100 mb-5"/></Col>
+              <Col></Col>     
+            </Row>
+          </Row>  
+        </Container>
+        <Container>    
+          <Row className="mb-3">
             <Col>
-              <Card style={{ width: '18rem' }}>
-                <Card.Img variant="top" src="../assets/img/portfolio/restaurant-japonais.jpg" />
+              <Card>
+                <Card.Img variant="top" src= {Fresh} />
                 <Card.Body>
                   <Card.Title className="fw-bold">Fresh Food</Card.Title>
                   <Card.Text>
-                    Site de vente de produits frais en ligne.
+                    Site de vente de produits frais en ligne
                   </Card.Text>
                   <Button variant="primary">Voir le site</Button>
                 </Card.Body>
+                <Card.Footer>
+                  <small className="text-muted">Site réalisé avec PHP et MySQL</small>
+                </Card.Footer>
               </Card>
             </Col>
             <Col>
-              <Card style={{ width: '18rem' }}>
-                <Card.Img variant="top" src="../assets/img/portfolio/fresh-food.jpg" />
+              <Card>
+                <Card.Img variant="top" src= {Akira} />
                 <Card.Body>
-                  <Card.Title>Card Title</Card.Title>
+                  <Card.Title className="fw-bold">Reataurant Akira</Card.Title>
                   <Card.Text>
-                    Some quick example text to build on the card title and make up the
-                    bulk of the card's content.
+                    Site de vente de produits frais en ligne
                   </Card.Text>
-                  <Button variant="primary">Go somewhere</Button>
+                  <Button variant="primary">Voir le site</Button>
                 </Card.Body>
+                <Card.Footer>
+                  <small className="text-muted">Site réalisé avec WordPress</small>
+                </Card.Footer>
               </Card>
             </Col>
             <Col>
-              <Card style={{ width: '18rem' }}>
-                <Card.Img variant="top" src="../assets/img/portfolio/fresh-food.jpg" />
+              <Card>
+                <Card.Img variant="top" src= {Etre} />
                 <Card.Body>
-                  <Card.Title>Card Title</Card.Title>
+                  <Card.Title className="fw-bold">Espace bien-être</Card.Title>
                   <Card.Text>
-                    Some quick example text to build on the card title and make up the
-                    bulk of the card's content.
+                    Site de vente de produits frais en ligne
                   </Card.Text>
-                  <Button variant="primary">Go somewhere</Button>
+                  <Button variant="primary">Voir le site</Button>
                 </Card.Body>
+                <Card.Footer>
+                  <small className="text-muted">Site réalisé avec LAVAREL</small>
+                </Card.Footer>
               </Card>
             </Col>  
           </Row>
-          <Row>
+          <Row className="mb-3">
             <Col>
-              <Card style={{ width: '18rem' }}>
-                <Card.Img variant="top" src="../assets/img/portfolio/fresh-food.jpg" />
+              <Card>
+                <Card.Img variant="top" src= {Seo} />
                 <Card.Body>
-                  <Card.Title>Card Title</Card.Title>
+                  <Card.Title className="fw-bold">SEO</Card.Title>
                   <Card.Text>
-                    Some quick example text to build on the card title and make up the
-                    bulk of the card's content.
+                    Amélioration du référencement d'un site e-commerce
                   </Card.Text>
-                  <Button variant="primary">Go somewhere</Button>
+                  <Button variant="primary">Voir le site</Button>
                 </Card.Body>
+                <Card.Footer>
+                  <small className="text-muted">Utilisation des outils SEO</small>
+                </Card.Footer>
               </Card>
             </Col>
             <Col>
-              <Card style={{ width: '18rem' }}>
-                <Card.Img variant="top" src="../assets/img/portfolio/fresh-food.jpg" />
+              <Card>
+                <Card.Img variant="top" src= {CreationApi} />
                 <Card.Body>
-                  <Card.Title>Card Title</Card.Title>
+                  <Card.Title className="fw-bold">Création d'une API</Card.Title>
                   <Card.Text>
-                    Some quick example text to build on the card title and make up the
-                    bulk of the card's content.
+                    Création d'une API RESTFULL publique
                   </Card.Text>
-                  <Button variant="primary">Go somewhere</Button>
+                  <Button variant="primary">Voir le site</Button>
                 </Card.Body>
+                <Card.Footer>
+                  <small className="text-muted">PHP - SYMPHONY</small>
+                </Card.Footer>
               </Card>
             </Col>
             <Col>
-              <Card style={{ width: '18rem' }}>
-                <Card.Img variant="top" src="../assets/img/portfolio/fresh-food.jpg" />
+              <Card>
+                <Card.Img variant="top" src= {Maquet} />
                 <Card.Body>
-                  <Card.Title>Card Title</Card.Title>
+                  <Card.Title className="fw-bold">Maquette d'un site web</Card.Title>
                   <Card.Text>
-                    Some quick example text to build on the card title and make up the
-                    bulk of the card's content.
+                    Création du prototype d'un site
                   </Card.Text>
-                  <Button variant="primary">Go somewhere</Button>
+                  <Button variant="primary">Voir le site</Button>
                 </Card.Body>
+                <Card.Footer>
+                  <small className="text-muted">Réalisé avec FIGMA</small>
+                </Card.Footer>
               </Card>
             </Col>  
           </Row>
-      </Container>
+        </Container>
+
   </div>
 
-  )
+  );
 }
-export default Realisations;
+
