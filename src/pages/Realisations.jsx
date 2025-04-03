@@ -1,5 +1,5 @@
 import "../App.css";
-import { Container, Row, Col, Card, Button, Image} from "react-bootstrap";
+import { Container, Row, Col, Card, Button, Image, Ratio } from "react-bootstrap";
 import Fresh from "../assets/img/portfolio/fresh-food.jpg";
 import Akira from "../assets/img/portfolio/restaurant-japonais.jpg";
 import Etre from "../assets/img/portfolio/espace-bien-etre.jpg";
@@ -12,17 +12,13 @@ export default function Realisations () {
   return (
     <div>
       <Image src={Banner} className="ratio ratio-21x9" />
-        <Container className="text-center">
+        <Container className="text-center d-flex justify-content-center">
           <Row>
             <Col>
               <h1 className="fw-bold mt-5">Portfolio</h1>
               <p>Voici queques-unes de mes réalisations</p>
             </Col>
-            <Row>
-              <Col></Col>
-              <Col><hr className="border border-primary border-3 opacity-100 mb-5"/></Col>
-              <Col></Col>     
-            </Row>
+            <hr className="border border-primary border-3 opacity-100 mb-5"/>
           </Row>  
         </Container>
         <Container>    
@@ -58,7 +54,7 @@ export default function Realisations () {
               </Card>
             </Col>
             <Col>
-              <Card>
+              <Card> 
                 <Card.Img variant="top" src= {Etre} />
                 <Card.Body>
                   <Card.Title className="fw-bold">Espace bien-être</Card.Title>
