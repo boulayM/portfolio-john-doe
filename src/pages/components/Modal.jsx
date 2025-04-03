@@ -1,7 +1,5 @@
-import { Button, Modal, Container, Row, Col, Image, Card } from "react-bootstrap";
+import { Button, Modal, Container, Row, Col, } from "react-bootstrap";
 import { useState } from "react";
-import "../App.css";
-import JdCard from "./JDCard";
 
 const ModalHome = (props)=>{
 
@@ -26,7 +24,7 @@ const ModalHome = (props)=>{
                     <Col sm={12} md={6} id="avatar">
                     </Col>
                     <Col sm={12} md={6}>
-                        <Row className="border border-secondary border-top-0 border-end-0 border-start-0">
+                        <Row className="border border-secondary border-1 border-top-0 border-end-0 border-start-0">
                             <i class="bi bi-person"><a href="https://github.com/github-john-doe">  John Doe</a></i>
                         </Row>
                         <Row className="border border-secondary border-top-0 border-end-0 border-start-0">

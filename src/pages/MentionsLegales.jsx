@@ -1,9 +1,51 @@
-const MentionsLegales = ()=>{
-    return (
-        <div>
-            <h1>Mentions Legales</h1>
-        </div>
+import { Container, Row, Col } from 'react-bootstrap';
+import Accordion from 'react-bootstrap/Accordion';
+import Coord from './components/Coordonnees';
 
-    )
+function AllCollapseExample() {
+  return (
+
+    <>
+    <Container className="mt-5 pt-5 text-center">
+
+        <h1 className="fw-bold">Mentions légales</h1>
+        <Row>
+            <Col></Col>
+            <Col><hr className="border border-primary border-3 opacity-100 mb-5"/></Col>
+            <Col></Col>     
+        </Row>
+    </Container>
+
+    <Container className='mb-5'>
+    <Accordion>
+      <Accordion.Item eventKey="0">
+        <Accordion.Header>Editeur du site</Accordion.Header>
+        <Accordion.Body>
+          <h3>John Doe</h3>
+          <Coord />
+        </Accordion.Body>
+      </Accordion.Item>
+      <Accordion.Item eventKey="1">
+        <Accordion.Header>Hébergeur</Accordion.Header>
+        <Accordion.Body>
+          <h2 className="fw-bold">alwaydata</h2>
+          <p>91 Rue du Faubourg Saint-Honoré, 75800 Paris</p>
+          <i class="bi bi-globe"><a href='https://www.alwaysdata.com/fr/' target='blank'>  www.alwaysdata.com</a></i>
+        </Accordion.Body>
+      </Accordion.Item>
+      <Accordion.Item eventKey="2">
+        <Accordion.Header>Crédits</Accordion.Header>
+        <Accordion.Body>
+          <h3 className="fw-bold">Crédits</h3>
+          <p>Ce site a été réalisé par John Doe, étudiant du <a href='https://www.centre-europeen-formation.fr/' target='blank'>Centre Européen de Formation</a></p>
+          <p><em>Les images utilisées sur ce site sont libres de droits et ont été obtenues sur le site <a href='https://pixabay.com/fr/' target='blank'>Pixabay</a></em></p>
+          <em>La favicon de ce site a été fournie par <a href='https://www.flaticon.com/de/kostenlose-icons/john-doe' target='blank'>John doe Icons erstellt von Freepik - Flaticon</a></em>
+        </Accordion.Body>
+      </Accordion.Item>
+    </Accordion>
+    </Container>
+    </>
+  );
 }
-export default MentionsLegales;
+
+export default AllCollapseExample;
