@@ -32,13 +32,9 @@ html {
     font-family: Nunito sans, sans-serif;
     font-weight: 600;
 }
+
 #avatar {
   background-image: url("https://avatars.githubusercontent.com/u/19842736?v=4");
-  background-repeat: no-repeat;
-  background-size: contain;
-}
-.portfolioHeader {
-  background-image: url("./assets/img/banner.jpg");
   background-repeat: no-repeat;
   background-size: contain;
 }
@@ -55,12 +51,50 @@ html {
   width: 100%;  
 }
 .serv {
-  display: flex;
-  flex-direction: column;
-  justify-content: space-around;
   align-items: center;
-  border: 1px solid rgb(164, 164, 164);
-  padding: 24px;
-  height: 100%;
+  padding: 48px 24px 24px 24px;
   margin-bottom: 10px;
+}
+.AppCard {
+  white-space: nowrap;
+  overflow: hidden;
+}
+.card:hover {
+  background-color: #efefef;
+  filter: drop-shadow(0px 5px 5px rgba(0, 0, 0, 0.29));
+}
+.btn-portfolio {
+  width: 6em;
+  height: 2.4em;
+  border-radius: 0.3em;
+  box-shadow: inset 0px 0px 20px rgba(0, 0, 0, 0.1);
+  border-style: none;
+  background-color: #0D6EFD;
+  color: white;
+}
+.btn-portfolio:hover {
+  background-color: #3885f9;
+}
+.CardText {
+  font-family: Arial Narrow, sans-serif;
+  font-weight: 500;
+}
+.AppModal {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.icone:hover {
+  opacity: 0.7;
+}
+#modalContainer {
+  display: flex;
+}
+.modalDiv {
+  display: flex;
+  width: 50%;
+  align-items: center;
+}
+.modalDiv2 {
+  width: 50%;
 }

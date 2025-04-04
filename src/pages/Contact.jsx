@@ -1,7 +1,7 @@
 import "../App.css";
 import { Container, Card, Col, Row } from "react-bootstrap";
-import ContactForm from "./components/ContactForm";
-import Coord from "./components/Coordonnees";
+import ContactForm from "../components/ContactForm";
+import Coord from "../components/Coordonnees";
 
 const Contact = ()=> {
     return (
@@ -19,7 +19,7 @@ const Contact = ()=> {
 
         <Card className="mb-4 cardBox">
             <Row className="text-start">
-                <Col>
+                <Col className="mb-4">
                     <h4 className="fw-bold">Formulaire de contact</h4>
                     <hr className="border border-primary border-2 opacity-100 mb-5"/>
                     <ContactForm />
