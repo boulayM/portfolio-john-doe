@@ -1,8 +1,8 @@
 import { Container, Row, Col } from 'react-bootstrap';
 import Accordion from 'react-bootstrap/Accordion';
-import Coord from './components/Coordonnees';
+import Coord from '../components/Coordonnees';
 
-function AllCollapseExample() {
+function MentionsLegales() {
   return (
 
     <>
@@ -48,4 +48,4 @@ function AllCollapseExample() {
   );
 }
 
-export default AllCollapseExample;
+export default MentionsLegales;

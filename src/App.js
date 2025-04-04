@@ -43,7 +43,7 @@ export default function App () {
             <footer>
                 <Container fluid>
                     <Row className = "bg-dark text-light p-4">
-                        <Col className="mx-5">
+                        <Col className="mx-5 mb-4">
                             <h3>John Doe</h3>
                             <ul className="list-group list-unstyled">
                                 <li>40 rue Laure Diebold</li>
@@ -51,11 +51,11 @@ export default function App () {
                                 <li>10 20 30 40 50</li>
                                 <li>johndoe@gmail.com</li>
                             </ul>
-                            <a href="https://github.com/github-john-doe" target="blank" className="link-light"><i class="bi bi-github fs-2"></i></a>
-                            <a href="https://x.com/fr" target="blank" className="link-light"><i class="bi bi-twitter-x fs-2 mx-3"></i></a>
-                            <a href="https://www.linkedin.com/in/johndoes/" target="blank" className="link-light"><i class="bi bi-linkedin fs-2"></i></a>
+                            <a href="https://github.com/github-john-doe" target="blank" className="link-light"><i class="bi bi-github fs-2 icone" rel="nofollow"></i></a>
+                            <a href="https://x.com/fr" target="blank" className="link-light"><i class="bi bi-twitter-x fs-2 mx-3 icone" rel="nofollow"></i></a>
+                            <a href="https://www.linkedin.com/in/johndoes/" target="blank" className="link-light"><i class="bi bi-linkedin fs-2 icone" rel="nofollow"></i></a>
                         </Col>
-                        <Col className="mx-5">
+                        <Col className="mx-5 mb-4">
                         <h3>Liens utiles</h3>
                             <ul className="list-group list-unstyled">
                                 <Link to="/" className="nav-link">Home</Link>
@@ -65,7 +65,7 @@ export default function App () {
                                 <Link to="/mentionslegales" className="nav-link">Mentions Légales</Link>
                             </ul>                        
                         </Col>
-                        <Col className="mx-5">
+                        <Col className="mx-5 mb-4">
                         <h3>Mes dernières réalisations</h3>
                             <ul className="list-group list-unstyled">
                                 <Link to="/realisations" className="nav-link">Fresh Food</Link>
@@ -82,6 +82,6 @@ export default function App () {
             </footer>
 
         </div>
-    )
+    );
 }
 
