@@ -60,6 +60,9 @@ html {
   background-color: #efefef;
   filter: drop-shadow(0px 5px 5px rgba(0, 0, 0, 0.29));
 }
+.card.cardBox {
+  pointer-events: none;
+}
 .CardText {
   font-family: Arial Narrow, sans-serif;
   font-weight: 500;
