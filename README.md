@@ -29,13 +29,13 @@ Il a pour but de tester les compétences du candidat dans les domaines suivants
 
 ## Modules évalués
 
-        • Introduction à Javascript,
+    • Introduction à Javascript,
     • Document Object Model (DOM),
     • S'initier au Script Client avec Javascript,
     • Les règles ergonomiques,
     • Optimiser un site Web avec Bootstrap,
     • Coder Responsive Design avec React.js.
-    
+
 ## Pour afficher ce site vous devez:
 
 1- Télécharger les fichiers contenus dans ce dépot\
