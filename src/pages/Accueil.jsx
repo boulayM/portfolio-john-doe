@@ -6,6 +6,7 @@ import JDoe from "../assets/img/john-doe-about.jpg";
 
 
 const Accueil = ()=>{
+    
     return (
         <>
         <Hero />
