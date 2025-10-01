@@ -56,6 +56,9 @@ html {
   white-space: nowrap;
   overflow: hidden;
 }
+.CardRow {
+min-width: 30%;
+}
 #cards {
   width: 30%;
 }

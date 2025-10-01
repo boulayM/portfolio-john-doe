@@ -28,7 +28,7 @@ const job = [
         name: "Espace bien-être",
         image: Etre,
         description: "Site de vente de produits frais en ligne",
-        tool: "Site réalisé avec LAVAREL",
+        tool: "Site réalisé avec LARAVEL",
         alt: "photo montage avec tête de Buddah"
     },
 
@@ -61,32 +61,29 @@ const job = [
 
      export default function CardsPortfolio () {
 
-        const jobList = job.map (job =>
-
-            <div id="cards">
-
-            <Card className="mb-4 AppCard">
-            <Card.Img variant="top" src= {job.image} title={job.name} alt={job.alt}/>
-            <Card.Body>
-              <Card.Title className="fw-bold">{job.name}</Card.Title>
-              <Card.Text>
-                <small className="CardText">{job.description}</small>
-              </Card.Text>
-              <Button className="btn-portfolio">Voir le site</Button>
-            </Card.Body>
-            <Card.Footer>
-              <small className="text-muted">{job.tool}</small>
-            </Card.Footer>
-            </Card>
         
-            </div>
-        )
         return (
-            <div>
-                {jobList}
-            </div>
-
-            
-)
+    <div className="container text-center">
+      <div className="row">
+        {job.map((job, index) => (
+          <div className="col-md-4" key={index}>
+            <Card className="mb-4 AppCard">
+                <Card.Img variant="top" src= {job.image} title={job.name} alt={job.alt}/>
+                <Card.Body>
+                <Card.Title className="fw-bold">{job.name}</Card.Title>
+                <Card.Text>
+                    <small className="CardText">{job.description}</small>
+                </Card.Text>
+                <Button className="btn-portfolio">Voir le site</Button>
+                </Card.Body>
+                <Card.Footer>
+                <small className="text-muted">{job.tool}</small>
+                </Card.Footer>
+                </Card>
+          </div>
+        ))}
+      </div>
+    </div>
+  );
     
 };
