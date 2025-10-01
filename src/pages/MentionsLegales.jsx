@@ -28,9 +28,9 @@ function MentionsLegales() {
       <Accordion.Item eventKey="1">
         <Accordion.Header>Hébergeur</Accordion.Header>
         <Accordion.Body>
-          <h2 className="fw-bold">alwaydata</h2>
-          <p>91 Rue du Faubourg Saint-Honoré, 75800 Paris</p>
-          <i class="bi bi-globe"><a href='https://www.alwaysdata.com/fr/' target='blank'>  www.alwaysdata.com</a></i>
+          <h2 className="fw-bold">Render</h2>
+          <p>525 Brannan St, San Francisco, CA 94107</p>
+          <i class="bi bi-globe"><a href='https://render.com' target='blank'>  www.render.com</a></i>
         </Accordion.Body>
       </Accordion.Item>
       <Accordion.Item eventKey="2">
