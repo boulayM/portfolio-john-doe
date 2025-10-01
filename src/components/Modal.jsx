@@ -1,6 +1,6 @@
 import { Button, Modal } from "react-bootstrap";
 import { useState } from "react";
-import HookGitHub from "./HookGitHub";
+import ModalDetails from "./ModalDetails";
 
 const ModalHome = (props)=>{
 
@@ -22,7 +22,7 @@ const ModalHome = (props)=>{
         </Modal.Header>
         <Modal.Body className = "bg-dark text-light">
 
-        <HookGitHub />
+        <ModalDetails />
 
         </Modal.Body>
         <Modal.Footer className = "bg-dark text-light">

@@ -7,6 +7,7 @@ import Seo from "../assets/img/portfolio/seo.jpg";
 import CreationApi from "../assets/img/portfolio/coder.jpg";
 import Maquet from "../assets/img/portfolio/screens.jpg";
 import Banner from "../assets/img/banner.jpg"
+import CardsPortfolio from "../components/CardsPortfolio";
 
 export default function Realisations () {
   return (
@@ -42,7 +43,7 @@ export default function Realisations () {
 
             <Col className="col-md-4">
               <Card className="mb-4 AppCard">
-                <Card.Img variant="top" src= {Akira} title="Restaurant Akira" alt="foto plat japonais"/>
+                <Card.Img variant="top" src= {Akira} title="Restaurant Akira" alt="photo plat japonais"/>
                 <Card.Body>
                   <Card.Title className="fw-bold">Reataurant Akira</Card.Title>
                   <Card.Text>
